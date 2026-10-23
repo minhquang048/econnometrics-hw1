@@ -1,0 +1,146 @@
+WAGE2: OLS with conventional standard errors
+Observations: 935; no missing values in analysis variables.
+
+PART (1)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               log_wage   R-squared:                       0.253
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     44.75
+Date:                Fri, 23 Oct 2026   Prob (F-statistic):           1.16e-54
+Time:                        02:24:17   Log-Likelihood:                -381.55
+No. Observations:                 935   AIC:                             779.1
+Df Residuals:                     927   BIC:                             817.8
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      5.3955      0.113     47.653      0.000       5.173       5.618
+educ           0.0654      0.006     10.468      0.000       0.053       0.078
+exper          0.0140      0.003      4.409      0.000       0.008       0.020
+tenure         0.0117      0.002      4.789      0.000       0.007       0.017
+married        0.1994      0.039      5.107      0.000       0.123       0.276
+black         -0.1883      0.038     -5.000      0.000      -0.262      -0.114
+south         -0.0909      0.026     -3.463      0.001      -0.142      -0.039
+urban          0.1839      0.027      6.822      0.000       0.131       0.237
+==============================================================================
+Omnibus:                       38.227   Durbin-Watson:                   1.823
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               83.390
+Skew:                          -0.224   Prob(JB):                     7.80e-19
+Kurtosis:                       4.393   Cond. No.                         187.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+PART (2)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               log_wage   R-squared:                       0.253
+Model:                            OLS   Adj. R-squared:                  0.246
+Method:                 Least Squares   F-statistic:                     34.82
+Date:                Fri, 23 Oct 2026   Prob (F-statistic):           3.84e-53
+Time:                        02:24:17   Log-Likelihood:                -381.23
+No. Observations:                 935   AIC:                             782.5
+Df Residuals:                     925   BIC:                             830.9
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept          5.4066      0.114     47.273      0.000       5.182       5.631
+educ               0.0655      0.006     10.469      0.000       0.053       0.078
+exper              0.0134      0.003      4.054      0.000       0.007       0.020
+tenure             0.0118      0.002      4.787      0.000       0.007       0.017
+married            0.1976      0.039      5.044      0.000       0.121       0.274
+black             -0.1912      0.038     -5.050      0.000      -0.266      -0.117
+south             -0.0906      0.026     -3.444      0.001      -0.142      -0.039
+urban              0.1844      0.027      6.833      0.000       0.131       0.237
+I(exper ** 2)     -0.0001      0.000     -0.756      0.450      -0.000       0.000
+I(tenure ** 2)   -3.9e-05      0.000     -0.185      0.853      -0.000       0.000
+==============================================================================
+Omnibus:                       37.675   Durbin-Watson:                   1.819
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               80.764
+Skew:                          -0.226   Prob(JB):                     2.90e-18
+Kurtosis:                       4.367   Cond. No.                         745.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+PART (3)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               log_wage   R-squared:                       0.254
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     39.32
+Date:                Fri, 23 Oct 2026   Prob (F-statistic):           4.35e-54
+Time:                        02:24:17   Log-Likelihood:                -380.92
+No. Observations:                 935   AIC:                             779.8
+Df Residuals:                     926   BIC:                             823.4
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      5.3748      0.115     46.859      0.000       5.150       5.600
+educ           0.0671      0.006     10.442      0.000       0.055       0.080
+exper          0.0138      0.003      4.333      0.000       0.008       0.020
+tenure         0.0118      0.002      4.805      0.000       0.007       0.017
+married        0.1989      0.039      5.094      0.000       0.122       0.276
+black          0.0948      0.255      0.371      0.711      -0.406       0.596
+south         -0.0894      0.026     -3.404      0.001      -0.141      -0.038
+urban          0.1839      0.027      6.821      0.000       0.131       0.237
+educ:black    -0.0226      0.020     -1.121      0.263      -0.062       0.017
+==============================================================================
+Omnibus:                       38.505   Durbin-Watson:                   1.827
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               83.862
+Skew:                          -0.227   Prob(JB):                     6.16e-19
+Kurtosis:                       4.395   Cond. No.                         422.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+PART (4)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               log_wage   R-squared:                       0.253
+Model:                            OLS   Adj. R-squared:                  0.246
+Method:                 Least Squares   F-statistic:                     39.17
+Date:                Fri, 23 Oct 2026   Prob (F-statistic):           6.78e-54
+Time:                        02:24:17   Log-Likelihood:                -381.37
+No. Observations:                 935   AIC:                             780.7
+Df Residuals:                     926   BIC:                             824.3
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept         5.4038      0.114     47.351      0.000       5.180       5.628
+educ              0.0655      0.006     10.471      0.000       0.053       0.078
+exper             0.0141      0.003      4.433      0.000       0.008       0.020
+tenure            0.0117      0.002      4.745      0.000       0.007       0.016
+married           0.1889      0.043      4.406      0.000       0.105       0.273
+black            -0.2408      0.096     -2.508      0.012      -0.429      -0.052
+south            -0.0920      0.026     -3.495      0.000      -0.144      -0.040
+urban             0.1844      0.027      6.833      0.000       0.131       0.237
+married:black     0.0614      0.103      0.594      0.553      -0.141       0.264
+==============================================================================
+Omnibus:                       38.572   Durbin-Watson:                   1.824
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               84.151
+Skew:                          -0.227   Prob(JB):                     5.33e-19
+Kurtosis:                       4.398   Cond. No.                         233.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+ANSWERS
+(i) Black/nonblack conditional wage gap: approximately -18.835%; exact transformation -17.168%; p=6.83932e-07.
+(ii) Joint squared terms: F(2, 925)=0.313059, p=0.731284.
+(iii) educ:black coefficient=-0.022624; p=0.262603.
+Education slope, nonblack=0.067115; black=0.044492.
+(iv) Married black/nonblack contrast (black + married:black)=-0.179466: approximately -17.947%; exact transformation -16.428%; p=1.0691e-05.
+These are conditional associations, not established causal effects.
